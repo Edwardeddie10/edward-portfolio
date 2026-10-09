@@ -249,7 +249,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-[#08090b] px-6 py-8 text-center text-sm text-slate-400">
-        © {new Date().getFullYear()} Edward Unukpo. All rights reserved.
+        © 2026 Edward Unukpo. All rights reserved.
       </footer>
     </main>
   );
