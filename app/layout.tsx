@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    verification: {
+    google: "65gO8lp52E6dklphgLX90fy90B0ubgMmy9COHoy9UZQ",
+  },
   metadataBase: new URL(
     "https://edwardeddie10.github.io/edward-portfolio/"
   ),
