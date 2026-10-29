@@ -272,15 +272,6 @@ export default function Home() {
             Get in Touch →
           </a>
 
-          <p className="mt-6 text-sm text-slate-400">
-            Or email me directly at{" "}
-            <a
-              href="mailto:edwardunukpo@gmail.com"
-              className="text-[#c6a879] underline underline-offset-4 hover:text-amber-200"
-            >
-              edwardunukpo@gmail.com
-            </a>
-          </p>
         </div>
       </section>
 
