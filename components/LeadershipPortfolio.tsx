@@ -9,14 +9,14 @@ const impact = [
   },
   {
     metric: "People",
-    title: "Engineering Leadership",
+    title: "Engineering & Technical Leadership",
     description:
       "Led and coached cross-functional engineers, aligning team development, delivery priorities, and technical strategy with organizational goals.",
     tags: ["Talent Development", "Strategic Leadership"],
   },
   {
     metric: "Change",
-    title: "Enterprise Transformation",
+    title: "Cloud & Platform Modernization",
     description:
       "Advanced infrastructure automation, platform modernization, observability, and operational practices to strengthen engineering effectiveness.",
     tags: ["Transformation", "Operational Excellence"],
@@ -24,6 +24,13 @@ const impact = [
 ];
 
 const initiatives = [
+  {
+    category: "DATA ENGINEERING & ARCHITECTURE",
+    title: "Cloud Data Pipeline Architecture",
+    description:
+      "Designed a reference architecture for data ingestion and modernization using Amazon S3, AWS Lambda validation, AWS Glue ETL, Amazon Redshift, and Athena-based auditing. Illustrative design; not presented as a production deployment.",
+    outcome: "Demonstrates data pipeline design, validation, transformation, and governance considerations",
+  },
   {
     category: "DEVELOPER EXPERIENCE",
     title: "Internal Developer Platform & Self-Service",
@@ -33,9 +40,9 @@ const initiatives = [
   },
   {
     category: "CLOUD TRANSFORMATION",
-    title: "Cloud Infrastructure Modernization",
+    title: "Cloud Infrastructure & Automation",
     description:
-      "Directed infrastructure-as-code modernization through reusable Terraform and CDKTF patterns, CI/CD automation, and cloud governance.",
+      "Led infrastructure-as-code modernization using reusable Terraform and CDKTF patterns, CI/CD automation, and cloud governance practices.",
     outcome: "Established more consistent provisioning and delivery practices",
   },
   {
@@ -68,38 +75,34 @@ const initiatives = [
   },
 ];
 
-const executiveExperience = [
+const selectedWork = [
   {
-    company: "CENTENE",
-    period: "2021 – 2026",
-    title: "Cloud Platform Engineering Leadership",
-    roles: [
-      "Manager, Cloud Platform Engineering",
-      "Senior Technical Platform Manager",
-    ],
+    category: "CLOUD & PLATFORM ENGINEERING",
+    title: "Enterprise Cloud Platform Modernization",
     description:
-      "Led engineering teams and strategic initiatives across enterprise cloud enablement, platform modernization, developer experience, observability, resilience, and operational excellence.",
-    strengths: [
-      "People Leadership",
-      "Platform Strategy",
-      "Enterprise Enablement",
-    ],
+      "Supported cloud platform capabilities, infrastructure automation, reusable Terraform/CDKTF patterns, and developer self-service for enterprise application teams.",
+    strengths: ["AWS", "Terraform / CDKTF", "Kubernetes", "Developer Enablement"],
   },
   {
-    company: "CENTURYLINK / LUMEN",
-    period: "2019 – 2021",
-    title: "Technical Product & Operations Leadership",
-    roles: [
-      "Technical Product Owner",
-      "Senior Operations Solution Analyst",
-    ],
+    category: "DEVOPS & SITE RELIABILITY",
+    title: "Delivery Automation & Operational Reliability",
     description:
-      "Connected business priorities with technical product delivery, operational platform improvements, cross-functional execution, and enterprise technology initiatives.",
-    strengths: [
-      "Product Delivery",
-      "Stakeholder Alignment",
-      "Operational Transformation",
-    ],
+      "Contributed to CI/CD standardization, observability modernization, incident response practices, and production reliability across complex enterprise systems.",
+    strengths: ["CI/CD", "Dynatrace", "CloudWatch", "SRE"],
+  },
+  {
+    category: "DATA ENGINEERING & ARCHITECTURE",
+    title: "Cloud Data Pipeline Reference Architecture",
+    description:
+      "Designed a reference architecture for data ingestion, validation, transformation, warehousing, and audit using S3, Lambda, Glue, Redshift, and Athena. Architecture concept; not represented as a production deployment.",
+    strengths: ["S3", "Lambda", "AWS Glue", "Redshift", "Athena"],
+  },
+  {
+    category: "TECHNICAL LEADERSHIP",
+    title: "Engineering Enablement & Product Delivery",
+    description:
+      "Led cross-functional engineering efforts, aligned technical roadmaps with business needs, and supported platform delivery, team development, and stakeholder collaboration.",
+    strengths: ["Engineering Leadership", "Technical Strategy", "Agile Delivery"],
   },
 ];
 
@@ -110,18 +113,17 @@ export default function LeadershipPortfolio() {
       <section id="impact" className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-xs font-semibold tracking-[0.25em] text-[#c6a879]">
-            01 / LEADERSHIP IMPACT
+            01 / ENGINEERING IMPACT
           </p>
 
           <h2 className="max-w-4xl text-4xl font-bold tracking-tight md:text-5xl">
-            Leading People.
+            Engineering Solutions.
             <span className="text-[#c6a879]"> Delivering Outcomes.</span>
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#b4b4b8]">
-            Building high-performing engineering teams, scaling
-            enterprise capabilities, and connecting technology
-            investments with meaningful organizational value.
+            Combining hands-on cloud and platform engineering with team
+            leadership, enterprise delivery, and measurable business value.
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -174,9 +176,9 @@ export default function LeadershipPortfolio() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#b4b4b8]">
-            Selected initiatives spanning platform strategy,
-            developer experience, cloud transformation, engineering
-            excellence, innovation, and financial stewardship.
+            Selected work spanning data architecture, cloud platforms,
+            DevOps automation, developer experience, reliability,
+            and engineering leadership.
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -208,62 +210,36 @@ export default function LeadershipPortfolio() {
         </div>
       </section>
 
-      {/* Executive Experience */}
+      {/* Capability-led work: no employer names, job titles, or dates */}
       <section id="experience" className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-xs font-semibold tracking-[0.25em] text-[#c6a879]">
-            03 / EXECUTIVE EXPERIENCE
+            03 / SELECTED ENGINEERING WORK
           </p>
-
           <h2 className="max-w-4xl text-4xl font-bold tracking-tight md:text-5xl">
-            Leadership Across
-            <span className="text-[#c6a879]">
-              {" "}Technology & Transformation.
-            </span>
+            Real Engineering Challenges.
+            <span className="text-[#c6a879]"> Practical Solutions.</span>
           </h2>
-
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#b4b4b8]">
-            A career built around developing teams, translating
-            strategy into execution, and modernizing enterprise
-            technology capabilities.
+            A capability-led view of enterprise contributions, technical
+            architecture, and engineering leadership — without a traditional
+            employment timeline.
           </p>
-
           <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {executiveExperience.map((job) => (
+            {selectedWork.map((work) => (
               <article
-                key={job.company}
+                key={work.title}
                 className="rounded-xl border border-[#34373d] bg-[#191b1f] p-8 transition hover:border-[#c6a879]"
               >
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <p className="text-sm font-semibold tracking-widest text-[#c6a879]">
-                    {job.company}
-                  </p>
-                  <p className="text-sm text-[#b4b4b8]">
-                    {job.period}
-                  </p>
-                </div>
-
-                <h3 className="mt-6 text-2xl font-bold">
-                  {job.title}
-                </h3>
-
-                <div className="mt-5 space-y-2">
-                  {job.roles.map((role) => (
-                    <p
-                      key={role}
-                      className="text-sm text-[#d3d3d5]"
-                    >
-                      {role}
-                    </p>
-                  ))}
-                </div>
-
-                <p className="mt-6 leading-relaxed text-[#b4b4b8]">
-                  {job.description}
+                <p className="text-xs font-semibold tracking-widest text-[#c6a879]">
+                  {work.category}
                 </p>
-
+                <h3 className="mt-5 text-2xl font-bold">{work.title}</h3>
+                <p className="mt-5 leading-relaxed text-[#b4b4b8]">
+                  {work.description}
+                </p>
                 <div className="mt-8 flex flex-wrap gap-2 border-t border-[#34373d] pt-6">
-                  {job.strengths.map((strength) => (
+                  {work.strengths.map((strength) => (
                     <span
                       key={strength}
                       className="rounded bg-[#2b2d32] px-3 py-2 text-xs text-[#e3cba6]"
@@ -274,23 +250,6 @@ export default function LeadershipPortfolio() {
                 </div>
               </article>
             ))}
-          </div>
-
-          <div className="mt-6 rounded-xl border border-[#34373d] bg-[#141619] p-8">
-            <p className="text-xs font-semibold tracking-widest text-[#c6a879]">
-              EARLIER CAREER FOUNDATIONS
-            </p>
-
-            <h3 className="mt-4 text-xl font-semibold">
-              Systems Analysis, Financial Services & Business Operations
-            </h3>
-
-            <p className="mt-4 leading-relaxed text-[#b4b4b8]">
-              Earlier experience across Sedgwick, BNY Mellon,
-              and JPMorgan Chase established a foundation in
-              business analysis, technology delivery, financial
-              operations, and client relationship management.
-            </p>
           </div>
         </div>
       </section>
