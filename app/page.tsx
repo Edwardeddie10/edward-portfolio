@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -9,6 +10,7 @@ const navigation = [
   { label: "Impact", href: "#impact" },
   { label: "Strategic Initiatives", href: "#modernization" },
   { label: "Selected Work", href: "#experience" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const expertise = [
@@ -76,16 +78,30 @@ export default function Home() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              menuOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+            }
             aria-expanded={menuOpen}
             aria-controls="mobile-navigation"
             onClick={() => setMenuOpen(!menuOpen)}
             className="flex h-11 w-11 items-center justify-center rounded-md border border-[#34373d] text-[#c6a879] transition hover:border-[#c6a879] lg:hidden"
           >
             {menuOpen ? (
-              <span aria-hidden="true" className="text-3xl leading-none">×</span>
+              <span
+                aria-hidden="true"
+                className="text-3xl leading-none"
+              >
+                ×
+              </span>
             ) : (
-              <span aria-hidden="true" className="text-2xl leading-none">☰</span>
+              <span
+                aria-hidden="true"
+                className="text-2xl leading-none"
+              >
+                ☰
+              </span>
             )}
           </button>
         </div>
@@ -125,13 +141,16 @@ export default function Home() {
           <br />
           Enabling Teams.
           <br />
-          <span className="text-[#c6a879]">Delivering Impact.</span>
+          <span className="text-[#c6a879]">
+            Delivering Impact.
+          </span>
         </h1>
 
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
-          I work at the intersection of cloud infrastructure, data platforms,
-          DevOps, and engineering leadership—building reliable systems,
-          automating delivery, and connecting technology to business outcomes.
+          I work at the intersection of cloud infrastructure,
+          data platforms, DevOps, and engineering leadership—
+          building reliable systems, automating delivery,
+          and connecting technology to business outcomes.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3 text-sm text-[#c6a879]">
@@ -160,7 +179,10 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-[#191b1f] px-6 py-24 text-[#f5f2ec]">
+      <section
+        id="about"
+        className="bg-[#191b1f] px-6 py-24 text-[#f5f2ec]"
+      >
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 font-semibold uppercase tracking-widest text-[#c6a879]">
             About Me
@@ -171,26 +193,34 @@ export default function Home() {
           </h2>
 
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-[#b4b4b8]">
-            I am a technology professional with over a decade of experience
-            across cloud engineering, platform modernization, DevOps,
-            production reliability, and engineering leadership. My work spans
-            infrastructure automation, Kubernetes-based platforms, CI/CD,
-            observability, and cloud data architecture—from ingestion and
-            transformation to analytics-ready platforms. I combine hands-on
-            technical problem-solving with team leadership and strategic
-            planning to deliver practical, scalable enterprise solutions.
+            I am a technology professional with over a decade
+            of experience across cloud engineering, platform
+            modernization, DevOps, production reliability,
+            and engineering leadership. My work spans
+            infrastructure automation, Kubernetes-based
+            platforms, CI/CD, observability, and cloud data
+            architecture—from ingestion and transformation
+            to analytics-ready platforms. I combine hands-on
+            technical problem-solving with team leadership
+            and strategic planning to deliver practical,
+            scalable enterprise solutions.
           </p>
         </div>
       </section>
 
       {/* Expertise Section */}
-      <section id="leadership" className="bg-[#111316] px-6 py-24 text-[#f5f2ec]">
+      <section
+        id="leadership"
+        className="bg-[#111316] px-6 py-24 text-[#f5f2ec]"
+      >
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 font-semibold uppercase tracking-widest text-[#c6a879]">
             Expertise
           </p>
 
-          <h2 className="mb-10 text-4xl font-bold">Areas of Focus</h2>
+          <h2 className="mb-10 text-4xl font-bold">
+            Areas of Focus
+          </h2>
 
           <div className="grid gap-6 md:grid-cols-2">
             {expertise.map((item) => (
@@ -198,7 +228,10 @@ export default function Home() {
                 key={item.title}
                 className="rounded-xl border border-[#34373d] bg-[#191b1f] p-8 transition hover:border-[#c6a879]"
               >
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold">
+                  {item.title}
+                </h3>
+
                 <p className="mt-4 leading-relaxed text-[#b4b4b8]">
                   {item.description}
                 </p>
@@ -208,8 +241,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact, Strategic Initiatives & Experience */}
+      {/* Impact, Strategic Initiatives & Selected Work */}
       <LeadershipPortfolio />
+
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="bg-[#0b0c0e] px-6 py-24 text-center"
+      >
+        <div className="mx-auto max-w-3xl">
+          <p className="mb-4 font-semibold uppercase tracking-widest text-[#c6a879]">
+            Let's Connect
+          </p>
+
+          <h2 className="text-4xl font-bold md:text-5xl">
+            Let's Build Something Meaningful.
+          </h2>
+
+          <p className="mt-6 text-lg leading-relaxed text-slate-300">
+            Interested in discussing cloud engineering,
+            data platforms, DevOps, infrastructure automation,
+            or technology collaboration? I'd welcome
+            the conversation.
+          </p>
+
+          <a
+            href="mailto:edwardunukpo@gmail.com"
+            className="mt-10 inline-flex items-center justify-center rounded-md bg-[#c6a879] px-8 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+          >
+            Get in Touch →
+          </a>
+
+          <p className="mt-6 text-sm text-slate-400">
+            Or email me directly at{" "}
+            <a
+              href="mailto:edwardunukpo@gmail.com"
+              className="text-[#c6a879] underline underline-offset-4 hover:text-amber-200"
+            >
+              edwardunukpo@gmail.com
+            </a>
+          </p>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-[#08090b] px-6 py-8 text-center text-sm text-slate-400">
