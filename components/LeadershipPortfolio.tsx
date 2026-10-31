@@ -124,6 +124,7 @@ const projects = [
     title: "AWS Claims Data Engineering Platform",
     status: "IN DEVELOPMENT",
     github: "https://github.com/Edwardeddie10/aws-claims-platform",
+    architecture: "https://github.com/Edwardeddie10/aws-claims-platform/blob/main/docs/architecture.md",
     description:
       "Building a hands-on AWS data engineering platform using synthetic claims data, infrastructure as code, automated data validation, and cloud-native processing patterns.",
     technologies: [
