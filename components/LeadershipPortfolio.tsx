@@ -352,6 +352,14 @@ export default function LeadershipPortfolio() {
                     </span>
                   ))}
                 </div>
+                <a
+  href={project.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-8 inline-flex items-center rounded-lg border border-[#c6a879] px-5 py-3 text-sm font-semibold text-[#c6a879] transition hover:bg-[#c6a879] hover:text-[#0b0c0e]"
+>
+  View GitHub Repository →
+</a>
               </article>
             ))}
           </div>
