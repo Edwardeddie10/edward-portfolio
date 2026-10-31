@@ -361,6 +361,15 @@ export default function LeadershipPortfolio() {
 >
   View GitHub Repository →
 </a>
+
+                                <a
+                  href={project.architecture}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 ml-3 inline-flex items-center rounded-lg border border-[#34373d] px-5 py-3 text-sm font-semibold text-[#f5f2ec] transition hover:border-[#c6a879] hover:text-[#c6a879]"
+                >
+                  View Architecture →
+                </a>
               </article>
             ))}
           </div>
