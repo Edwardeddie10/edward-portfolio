@@ -10,6 +10,7 @@ const navigation = [
   { label: "Impact", href: "#impact" },
   { label: "Strategic Initiatives", href: "#modernization" },
   { label: "Selected Work", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
