@@ -134,7 +134,7 @@ export default function Home() {
         <div className="mb-8 h-1 w-16 rounded-full bg-[#c6a879]" />
 
         <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-[#c6a879]">
-          Cloud • Data • Platform Engineering • DevOps
+          CLOUD • DATA • PLATFORM ENGINEERING • DEVOPS • LEADERSHIP
         </p>
 
         <h1 className="max-w-5xl text-5xl font-bold leading-tight tracking-tight md:text-7xl">
