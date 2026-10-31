@@ -122,7 +122,7 @@ const projects = [
   {
     category: "AWS & DATA ENGINEERING",
     title: "AWS Claims Data Engineering Platform",
-    status: "IN DEVELOPMENT",
+    status: "IMPLEMENTED & TESTED",
     github: "https://github.com/Edwardeddie10/aws-claims-platform",
     architecture: "https://github.com/Edwardeddie10/aws-claims-platform/blob/main/docs/architecture.md",
     description:
