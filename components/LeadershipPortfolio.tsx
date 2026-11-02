@@ -135,7 +135,8 @@ const projects = [
     title: "Cloud-Native Platform Engineering | Docker & Kubernetes",
     status: "IMPLEMENTED & TESTED",
     github: "https://github.com/Edwardeddie10/docker-k8s-lab",
-    architecture: "",
+    architecture:
+      "https://github.com/Edwardeddie10/docker-k8s-lab/blob/master/docs/architecture.md",
     description:
       "Containerized a Flask application with Docker and Gunicorn, deployed two replicas to a local Kubernetes cluster, and implemented health probes, resource controls, non-root security, rolling updates, and GitHub Actions CI validation.",
     technologies: [
