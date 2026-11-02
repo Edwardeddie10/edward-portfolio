@@ -124,14 +124,27 @@ const projects = [
     title: "AWS Claims Data Engineering Platform",
     status: "IMPLEMENTED & TESTED",
     github: "https://github.com/Edwardeddie10/aws-claims-platform",
-    architecture: "https://github.com/Edwardeddie10/aws-claims-platform/blob/main/docs/architecture.md",
+    architecture:
+      "https://github.com/Edwardeddie10/aws-claims-platform/blob/main/docs/architecture.md",
     description:
       "Building a hands-on AWS data engineering platform using synthetic claims data, infrastructure as code, automated data validation, and cloud-native processing patterns.",
+    technologies: ["AWS S3", "AWS Lambda", "Python", "Terraform"],
+  },
+  {
+    category: "CLOUD-NATIVE & PLATFORM ENGINEERING",
+    title: "Cloud-Native Platform Engineering | Docker & Kubernetes",
+    status: "IMPLEMENTED & TESTED",
+    github: "https://github.com/Edwardeddie10/docker-k8s-lab",
+    architecture: "",
+    description:
+      "Containerized a Flask application with Docker and Gunicorn, deployed two replicas to a local Kubernetes cluster, and implemented health probes, resource controls, non-root security, rolling updates, and GitHub Actions CI validation.",
     technologies: [
-      "AWS S3",
-      "AWS Lambda",
+      "Docker",
+      "Kubernetes",
+      "Minikube",
       "Python",
-      "Terraform",
+      "Gunicorn",
+      "GitHub Actions",
     ],
   },
 ];
@@ -353,23 +366,26 @@ export default function LeadershipPortfolio() {
                     </span>
                   ))}
                 </div>
-                <a
-  href={project.github}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex items-center rounded-lg border border-[#c6a879] px-5 py-3 text-sm font-semibold text-[#c6a879] transition hover:bg-[#c6a879] hover:text-[#0b0c0e]"
->
-  View GitHub Repository →
-</a>
 
-                                <a
-                  href={project.architecture}
+                <a
+                  href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 ml-3 inline-flex items-center rounded-lg border border-[#34373d] px-5 py-3 text-sm font-semibold text-[#f5f2ec] transition hover:border-[#c6a879] hover:text-[#c6a879]"
+                  className="mt-8 inline-flex items-center rounded-lg border border-[#c6a879] px-5 py-3 text-sm font-semibold text-[#c6a879] transition hover:bg-[#c6a879] hover:text-[#0b0c0e]"
                 >
-                  View Architecture →
+                  View GitHub Repository →
                 </a>
+
+                {project.architecture && (
+                  <a
+                    href={project.architecture}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 ml-3 inline-flex items-center rounded-lg border border-[#34373d] px-5 py-3 text-sm font-semibold text-[#f5f2ec] transition hover:border-[#c6a879] hover:text-[#c6a879]"
+                  >
+                    View Architecture →
+                  </a>
+                )}
               </article>
             ))}
           </div>
